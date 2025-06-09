@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/rathoreadii/social-media-platform/static/css/main.143625af.css",
-    "main.js": "/rathoreadii/social-media-platform/static/js/main.7f25a4b6.js",
+    "main.js": "/rathoreadii/social-media-platform/static/js/main.7ff9a7a9.js",
     "index.html": "/rathoreadii/social-media-platform/index.html",
     "main.143625af.css.map": "/rathoreadii/social-media-platform/static/css/main.143625af.css.map",
-    "main.7f25a4b6.js.map": "/rathoreadii/social-media-platform/static/js/main.7f25a4b6.js.map"
+    "main.7ff9a7a9.js.map": "/rathoreadii/social-media-platform/static/js/main.7ff9a7a9.js.map"
   },
   "entrypoints": [
     "static/css/main.143625af.css",
-    "static/js/main.7f25a4b6.js"
+    "static/js/main.7ff9a7a9.js"
   ]
 }
