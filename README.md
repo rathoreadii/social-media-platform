@@ -1,70 +1,76 @@
-# Getting Started with Create React App
+# 🧑‍💻 React Social Media App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A modular, responsive **social media web app** built using **React.js** and **Tailwind CSS**. This app features user authentication, post creation, likes, comments, and protected profile views – all managed with React’s Context API and clean component design.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 🚀 Features
 
-### `npm start`
+- 🔐 **User Authentication**
+  - Login and Registration pages
+  - Authentication state stored in `localStorage`
+  - Protected Routes using `React Router`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- 🖼️ **Post Functionality**
+  - Create new posts with captions & image URLs
+  - Like posts
+  - Add/view comments using a modal
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- 👤 **Profile Page**
+  - User info (username, ID)
+  - User-specific posts with delete functionality
+  - Modular `UserInfoCard`, `UserPostList`, `ProfilePostCard`
 
-### `npm test`
+- 🧩 **Modular Components**
+  - `PostCard`, `CommentModal`, `PostForm`, `LoginForm`, etc.
+  - Clean and scalable folder structure
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- 💅 **UI**
+  - Responsive design using Tailwind CSS
+  - Accessible and animated with Headless UI’s `Dialog`
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 🧰 Tech Stack
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+| Tech         | Usage                         |
+|--------------|-------------------------------|
+| React.js     | Frontend framework            |
+| Tailwind CSS | Utility-first styling         |
+| React Router | Routing and protected routes  |
+| Context API  | Global authentication state   |
+| Headless UI  | Accessible modals (comments)  |
+| LocalStorage | Persist user login state      |
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+## 📁 Folder Structure
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+src/
+├── components/ # Reusable UI components
+├── context/ # Auth context (Context API)
+├── data/ # Mock data (posts, profile posts)
+├── pages/ # Route-level pages
+├── utils/ # Utility functions (e.g. validation)
+├── App.js # Root component with routing
+├── index.js # Entry point
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+🛡️ Protected Routes
+ProtectedRoute.jsx ensures that routes like /profile/:userId and /create are only accessible if the user is logged in. Otherwise, they’re redirected to /login.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+🌐 Future Plans
+Connect to a backend using Node.js and MongoDB
+Add image upload support
+Implement edit functionality for posts
+Add follower/following features
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+📄 License
+This project is open-source and available under the MIT License.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+🙌 Acknowledgements
+React Docs
+TailwindCSS Docs
+Headless UI
+ChatGPT (OpenAI) – for modular design and architecture help
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
